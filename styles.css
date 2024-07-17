@@ -1,5 +1,12 @@
 body{
 
-    background-color: #29b4e3
+    background-color: #29b4e3;
+
+}
+
+h1 {
+
+    text-align: center;
+    margin: 20px;
 
 }
