@@ -1,6 +1,6 @@
 body{
 
-    background-color: #29b4e3;
+    background-color: #ADEFD1FF;
 
 }
 
@@ -8,5 +8,13 @@ h1 {
 
     text-align: center;
     margin: 20px;
+    color: #00203FFF;
+    font-family: Impact;
+
+}
+
+button{
+
+    text-align: center;
 
 }
