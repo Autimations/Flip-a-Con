@@ -1,20 +1,75 @@
-function flipping() {
 
-    HTvalue = Math.random()
+let secretMode = null; 
+let secretActivated = false;
 
-    if (HTvalue == 0){
+function setOutcome(outcome){
 
+    secretMode = outcome;
+    secretActivated = true;
+    flipCoin();
+}
+
+
+function flipCoin(){
+
+    if (secretActivated) {
+
+        document.getElementById('coinResult').textContent = secretMode;
+
+        if (secretMode == "Tails"){
+
+            let img = document.querySelector("#coinImage");
+            img.setAttribute("src", "Images/Tails.png");
+    
+    
+        } else if (secretMode == "Heads"){
+    
+            let img = document.querySelector("#coinImage");
+            img.setAttribute("src", "Images/Heads.png");
+    
+        }
         
+        return;
+    }
 
-    } else if (HTvalue == 1){
+    secretActivated = false;
+
+    const randomNum = Math.random();
+
+    if (randomNum > 0.5){
+
+        result = "Tails"
+
+    } else if(randomNum < 0.5){
 
 
+        result = "Heads"
 
     }
+
+    document.getElementById('coinResult').textContent = result;
+
+    if (result == "Tails"){
+
+        let img = document.querySelector("#coinImage");
+        img.setAttribute("src", "Images/Tails.png");
+
+
+    } else if (result == "Heads"){
+
+        let img = document.querySelector("#coinImage");
+        img.setAttribute("src", "Images/Heads.png");
+
+    }
+    
 }
 
-function changeAnswer() {
+function resetFlipCoin(){
 
+    secretActivated = false;
+    secretMode = null;
 
 
 }
+
+

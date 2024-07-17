@@ -11,6 +11,17 @@
 
     <body>
         <h1>FLIP THE COIN</h1>
-        <button type="button" onclick="flipping()">FLIP</button>
+
+        <div>
+            <img id="coinImage" src="Images/NeturalCoin.png">
+            <p id="coinResult"></p>
+        </div>
+
+        <div id="buttons">
+            <button id="Heads" type="button" onclick="setOutcome('Heads')"></button>
+            <button id="normal" type="button" onclick="flipCoin(), resetFlipCoin()">FLIP</button>
+            <button id="Tails" type="button" onclick="setOutcome('Tails')"></button>
+        </div>
+        
     </body>
 </html>
