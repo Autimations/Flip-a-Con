@@ -8,7 +8,7 @@ h1 {
 
     text-align: center;
     margin: 20px;
-    background-color: #00203FFF;
+    
     font-family: Impact;
 
 }
@@ -16,5 +16,7 @@ h1 {
 button{
 
     text-align: center;
+    background-color: #00203FFF;
+    color: white;
 
 }
