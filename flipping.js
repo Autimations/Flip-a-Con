@@ -11,6 +11,8 @@ function setOutcome(outcome){
 
 
 function flipCoin(){
+    document.getElementById('coinResult').textContent = 'Determining result...';
+    setTimeout(() => {
 
     if (secretActivated) {
 
@@ -61,6 +63,7 @@ function flipCoin(){
         img.setAttribute("src", "Images/Heads.png");
 
     }
+}, 1000);
     
 }
 
